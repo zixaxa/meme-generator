@@ -57,7 +57,7 @@ const updateDetails = (url, title, author) => {
 };
 
 const generateMeme = () => {
-  fetch("https://meme-api.herokuapp.com/gimme/gimme")
+  fetch("https://meme-api.herokuapp.com/gimme")
     .then((response) => response.json())
     .then((data) => {
       updateDetails(data.url, data.title, data.author);
